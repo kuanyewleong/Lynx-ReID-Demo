@@ -1,0 +1,74 @@
+{
+  "title": "Individual Lynx Recognition (a simulated AI demo)",
+  "intro": "Can you match each mystery lynx to the right individual? First, compare the natural markings by eye. Then run the simulated AI ReID reveal and discuss how camera-trap photos can sometimes replace more intrusive methods such as tagging.",
+  "identities": [
+    {
+      "id": "lynx_kora",
+      "name": "lynx_207 - Kora",
+      "image": "assets/sample/207_kora_reference.jpg",
+      "caption": "Large shoulder spots and a clear cheek stripe."
+    },
+    {
+      "id": "lynx_mira",
+      "name": "lynx_145 - Mira",
+      "image": "assets/sample/145_mira_reference.jpg",
+      "caption": "Small clustered flank spots and pale face markings."
+    },
+    {
+      "id": "lynx_sava",
+      "name": "lynx_010 - Sava",
+      "image": "assets/sample/010_sava_reference.jpg",
+      "caption": "Sparse back spots and a dark nose bridge."
+    },
+    {
+      "id": "lynx_tibor",
+      "name": "lynx_237 - Tibor",
+      "image": "assets/sample/237_tibor_reference.jpg",
+      "caption": "Dense hip spots and a broken neck stripe."
+    }
+  ],
+  "queries": [
+    {
+      "id": "mystery_01",
+      "label": "Mystery photo 1",
+      "image": "assets/sample/145_mystery_01.jpg",
+      "correct_identity": "lynx_mira",
+      "confidence": 97,
+      "prompt": "Look for the small spot cluster near the shoulder.",
+      "evidence": ["shoulder cluster", "pale cheeks", "short nose bridge"]
+    },
+    {
+      "id": "mystery_02",
+      "label": "Mystery photo 2",
+      "image": "assets/sample/237_mystery_02.jpg",
+      "correct_identity": "lynx_tibor",
+      "confidence": 95,
+      "prompt": "Compare the hip spots and neck stripe.",
+      "evidence": ["dense hip spots", "broken neck stripe", "left flank arc"]
+    },
+    {
+      "id": "mystery_03",
+      "label": "Mystery photo 3",
+      "image": "assets/sample/207_mystery_03.jpg",
+      "correct_identity": "lynx_kora",
+      "confidence": 96,
+      "prompt": "The cheek stripe and large shoulder spots are useful.",
+      "evidence": ["large shoulder spots", "dark cheek stripe", "two back spots"]
+    },
+    {
+      "id": "mystery_04",
+      "label": "Mystery photo 4",
+      "image": "assets/sample/010_mystery_04.jpg",
+      "correct_identity": "lynx_sava",
+      "confidence": 94,
+      "prompt": "Focus on the back spots and nose bridge.",
+      "evidence": ["shoulder cluster", "pale cheeks", "short nose bridge"]
+    }
+  ],
+  "discussion_prompts": [
+    "Which clues did students use before seeing the reveal?",
+    "Why are natural markings useful for identifying individual animals?",
+    "What could make real AI ReID difficult: shadows, camera angle, snow, motion blur, or young animals growing up?",
+    "When might tagging still be needed, and when could photo-based ReID reduce disturbance?"
+  ]
+}
