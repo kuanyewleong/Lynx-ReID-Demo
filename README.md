@@ -39,6 +39,3 @@ Example:
 
 Click **New random round** in the sidebar to sample another set of 3 mystery photos.
 
-## Classroom note
-
-The reveal is scripted for teaching. After the reveal, tell students that real ReID systems learn visual patterns from many labeled photos and can help researchers monitor animals using camera traps, reducing the need for capture or tags in some situations.
