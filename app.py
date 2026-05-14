@@ -403,6 +403,13 @@ def render_guessing(demo: dict) -> None:
             st.markdown("</div>", unsafe_allow_html=True)
 
         with right:
+            st.markdown(
+                "<div style='font-size: 1.6rem; font-weight: 700; color: yellow; margin-bottom: 0.35rem;'>"
+                "Choose the matching reference"
+                "</div>",
+                unsafe_allow_html=True,
+            )
+
             selected = st.radio(
                 "Choose the matching reference",
                 options=options,
@@ -410,6 +417,7 @@ def render_guessing(demo: dict) -> None:
                 index=options.index(current_guess),
                 key=f"guess_{query['id']}",
                 horizontal=True,
+                label_visibility="collapsed",
             )
             st.session_state["guesses"][query["id"]] = selected
 
